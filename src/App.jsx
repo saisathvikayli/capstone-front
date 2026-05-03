@@ -7,7 +7,7 @@ import UserProfile from "./components/UserProfile";
 import AuthorProfile from "./components/AuthorProfile";
 import AuthorArticles from "./components/AuthorArticles";
 import WriteArticles from "./components/WriteArticles";
-import ArticleByID from "./components/ArticleBylD"
+import ArticleByID from "./components/ArticleById";
 import EditArticle from "./components/EditArticle";
 import {Toaster} from "react-hot-toast"
 import ProtectedRoute from "./components/ProtectedRoute";
