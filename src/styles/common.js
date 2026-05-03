@@ -1,5 +1,5 @@
 // src/styles/common.js
-// Theme: Red, Yellow, Vermilion, Black & Gold
+// Theme: red or others
 
 // ─── Layout ───────────────────────────────────────────
 export const pageBackground = "bg-[#0a0a0a] min-h-screen";
@@ -63,7 +63,7 @@ export const articleMainTitle = "text-4xl font-bold text-[#ffd700] leading-tight
 export const articleAuthorRow =
   "flex items-center justify-between border-t border-b border-[#c9a84c] py-4 text-sm text-[#aaa]";
 export const authorInfo = "flex items-center gap-2 font-medium text-[#c9a84c]";
-export const articleContent = "text-[#e0e0e0] leading-[1.9] text-[1rem] whitespace-pre-line mt-8";
+export const articleContent = "text-[#1a1a1a] leading-[1.9] text-[1rem] whitespace-pre-line mt-8";
 export const articleFooter = "border-t border-[#c9a84c] mt-12 pt-6 text-sm text-[#888]";
 
 // ─── Article Actions ─────────────────────────────
