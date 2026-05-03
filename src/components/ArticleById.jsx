@@ -193,22 +193,26 @@ function ArticleByID() {
         {article.comments?.length === 0 && <p className="text-[#a1a1a6] text-sm text-center">No comments yet</p>}
 
         {article.comments?.map((commentObj, index) => {
-          const name = commentObj.user?.email || "User";
+          const name = commentObj.user?.firstName || commentObj.user?.email || "User";
           const firstLetter = name.charAt(0).toUpperCase();
 
           return (
-            <div key={index} className={commentCard}>
-              {/* Header */}
-              <div className={commentHeader}>
-                <div className={commentUserRow}>
-                  <div className={avatar}>{firstLetter}</div>
+           <div key={index} className={commentCard}>
+    {/* Header */}
+    <div className={commentHeader}>
+      <div className={commentUserRow}>
+        {commentObj.user?.profileImageUrl ? (
+          <img src={commentObj.user.profileImageUrl} className="w-9 h-9 rounded-full object-cover" />
+        ) : (
+          <div className={avatar}>{firstLetter}</div>
+        )}
 
-                  <div>
-                    <p className={commentUser}>{name}</p>
-                    <p className={commentTime}>{formatDate(commentObj.createdAt || new Date())}</p>
-                  </div>
-                </div>
-              </div>
+        <div>
+          <p className={commentUser}>{name}</p>
+          <p className={commentTime}>{formatDate(commentObj.createdAt || new Date())}</p>
+        </div>
+      </div>
+    </div>
 
               {/* Comment */}
               <p className={commentText}>{commentObj.comment}</p>
