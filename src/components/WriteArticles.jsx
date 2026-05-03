@@ -88,10 +88,12 @@ function WriteArticles() {
             })}
           >
             <option value="">Select category</option>
-            <option value="technology">Technology</option>
-            <option value="programming">Programming</option>
-            <option value="ai">AI</option>
-            <option value="web-development">Web Development</option>
+<option value="technology">Technology</option>
+<option value="programming">Programming</option>
+<option value="ai">AI</option>
+<option value="web-development">Web Development</option>
+<option value="philosophy">Philosophy</option>
+<option value="thrillers">Thrillers</option>
           </select>
 
           {errors.category && <p className={errorClass}>{errors.category.message}</p>}
