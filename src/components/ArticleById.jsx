@@ -43,6 +43,12 @@ function ArticleByID() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+  if (!user) {
+    navigate("/login");
+  }
+}, [user]);
+
+  useEffect(() => {
     //if aticle is transferred, then use it
     // if (article) return;
 
